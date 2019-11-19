@@ -27,29 +27,31 @@
     <div class="root">
       <button id="myBtn"><i class="far fa-pause-circle fa-2x"></i></button>
       <h1>&nbsp&nbspSecret Party <img src="images/vip.png" alt="logovip" class="imgLogoVip"></h1>
-      <h3>Codifica y decodifica información para asistir a tu fiesta VIP</h3>
+      <h3>Crea o descubre la información para asistir a tu fiesta VIP</h3>
 
       <a href="#info" id="myBtn2"><i class="fas fa-question-circle"></i></a>
       <div id="info" class="info">
         <div class="infoContenido">
           <a href="#" class="cierre">X</a>
-          <p>Si desea <span>CODIFICAR:</span></p>
+          <p>Si desea <span>CREAR:</span></p>
           <ol>
             <li>Ingrese la información de su evento.</li>
             <li>Elija un código party entre -100 y 100.</li>
-            <li>Presione botón codificar.</li>
-            <li>Copie el texto codificado del recuadro inferior.</li>
-            <li>Recuerde enviar su texto codificado junto al código party seleccionado para su posterior decodificación.</li>
+            <li>Presione botón crear.</li>
+            <li>El texto codificado estará en recuadro inferior. Cópielo! (presione copy).</li>
+            <li>Recuerde enviar su texto creado junto al código party seleccionado para su posterior desciframiento.</li>
+            <li>Presione botón limpiar si quiere volver a utilizar.</li>
           </ol>
           <br>
-          <p>Si desea <span>DECODIFICAR:</span></p>
+          <p>Si desea <span>DESCUBRIR:</span></p>
           <ol>
             <li>Ingrese la información de su invitación.</li>
             <li>Seleccione código party adjunto.</li>
-            <li>Presione botón decodificar</li>
-            <li>Copie el texto decodificado del recuadro inferior.</li>
-            ¡Disfrute de su evento!
+            <li>Presione botón descubrir</li>
+            <li>El texto decodificado estará en recuadro inferior. Cópielo! (presione copy).</li>
+            <li>Presione botón limpiar si quiere volver a utilizar.</li>
           </ol>
+          <p>¡Disfrute de su evento!</p>
         </div>
       </div>
 
@@ -61,10 +63,12 @@
         <input type="number" name="offset1" id="offset1" min="-100" max="100" required>
       </div>
 
-      <button type="button" name="button" id="btnCodificar" class="btnParty">Codificar</button>
-      <button type="button" name="button" id="btnDecodificar" class="btnParty">Decodificar</button>
+      <button type="button" name="button" id="btnCodificar" class="btnParty">Crear</button>
+      <button type="button" name="button" id="btnDecodificar" class="btnParty">Descubrir</button>
 
-      <button type="button" name="button" id="btnCopy" title="Copiar al portapapeles">Copy</button>
+      <div class="ajusteCopy">
+        <button type="button" name="button" id="btnCopy" title="Copiar al portapapeles">Copy</button>
+      </div>
 
       <textarea name="message2" id="message2" rows="8" cols="60" placeholder="Texto codificado/decodificado"></textarea>
 
@@ -75,4 +79,5 @@
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>

@@ -28,7 +28,6 @@ let messageOutput = document.getElementById('message2');
 let resultEncode = document.getElementById('btnCodificar');
 let resultDecode = document.getElementById('btnDecodificar');
 let resultCopy = document.getElementById('btnCopy');
-let resultClear = document.getElementById('btnLimpiar');
 
 /* Evento si se clickea botón codificar */
 resultEncode.addEventListener('click', coding);
@@ -73,14 +72,3 @@ function copying() {
 }
 
 /*---------------------------------------------------------------------------------*/
-
-/* Evento si se clickea botón limpiar */
-resultClear.addEventListener('click', cleaning);
-
-function cleaning() {
-    messageInput.value = '';
-    offsetInput.value = '';
-    messageOutput.value = '';
-    messageOutput.innerHTML = '';
-
-}

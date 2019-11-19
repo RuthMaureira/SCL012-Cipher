@@ -110,6 +110,7 @@ span {
   left:0;
   opacity:0;
   pointer-events:none;
+  z-index: 100;
 }
 
 #info:target {
@@ -159,8 +160,9 @@ span {
 
 #message2 {
   display: block;
-  margin: 0 auto 1.5rem;
+  margin: 1.5rem auto 1.5rem;
   box-shadow: 0 0 20px #5BF;
+  padding-top: 1.3rem;
 }
 
 .btnParty {
@@ -186,12 +188,25 @@ button:focus {
 }
 
 #btnCopy {
-  background-color: #fff;
+  background-color: transparent;
   color: gray;
   border: none;
   padding: 5px;
   display: block;
   margin: 1rem 4rem 0 auto;
+  position: absolute;
+  top: 2.7rem;
+  right: 0;
+}
+
+#btnCopy:hover {
+  background: rgba(219,219,219,1);
+  box-shadow: inset 20px 50px 0 0 #bfbfbf;
+}
+
+.ajusteCopy {
+  position: relative;
+  float: right;
 }
 
 @media (max-width: 992px){
@@ -211,6 +226,6 @@ button:focus {
   }
 
   #btnCopy {
-    margin: 1rem 1.5rem 0 auto;
+    right: -3.5rem;
   }
 }
