@@ -75,4 +75,4 @@ El diseño de la aplicación cuenta con un fondo oscuro que recuerda la noche, e
 
 ## Enlace Deploy
 
-[**Secret Party VIP**](https://github.com/RuthMaureira/SCL012-Cipher/src/index.html)
+[**Secret Party VIP**](https://ruthmaureira.github.io/SCL012-Cipher/src/index.html)
