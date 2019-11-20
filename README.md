@@ -21,7 +21,7 @@ Está pensado en que los eventos sean con un caracter VIP, reservando de este mo
 * CSS3
 * Javascript ES6
 
-##Prototipado
+## Prototipado
 
 El diseño de la aplicación cuenta con un fondo oscuro que recuerda la noche, el cual en conjunto con gliters provocan la sensación de un ambiente de fiesta. Ciertamente su combinación genera elegancia y el azul que acompaña al negro se escogió por ser un color que transmite seguridad, solidez, templanza.
 
@@ -42,7 +42,7 @@ El diseño de la aplicación cuenta con un fondo oscuro que recuerda la noche, e
 
 ### versión mobile
 
-![Versión Mobile](vistaMobile.png)
+![Versión Mobile](img/vistaMobile.png)
 
 
 ## Intrucciónes de uso
@@ -75,6 +75,4 @@ El diseño de la aplicación cuenta con un fondo oscuro que recuerda la noche, e
 
 ## Enlace Deploy
 
-::: warning
 [**Secret Party VIP**](https://github.com/RuthMaureira/SCL012-Cipher/src/index.html)
-:::
