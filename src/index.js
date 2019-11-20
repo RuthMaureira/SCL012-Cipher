@@ -33,14 +33,15 @@ let resultCopy = document.getElementById('btnCopy');
 resultEncode.addEventListener('click', coding);
 
 function coding() {
-
-  if(offsetInput.value >= 0){
-        messageOutput.innerHTML = window.cipher.encode(offsetInput.value, messageInput.value);
-  }
-
-  else {
+  if (messageInput.value === ''  || offsetInput.value === '') {
+    alert("Recuerde ingresar información y código party");
+  } else {
+    if (offsetInput.value >= 0) {
+      messageOutput.innerHTML = window.cipher.encode(offsetInput.value, messageInput.value);
+    } else {
       /* Incorporación offset negativo - se usa su módulo en cipher */
-        messageOutput.innerHTML = window.cipher.decode(offsetInput.value, messageInput.value);
+      messageOutput.innerHTML = window.cipher.decode(offsetInput.value, messageInput.value);
+    }
   }
 
 }
@@ -49,14 +50,15 @@ function coding() {
 resultDecode.addEventListener('click', decoding);
 
 function decoding() {
-
-  if(offsetInput.value >= 0){
-    messageOutput.innerHTML = window.cipher.decode(offsetInput.value, messageInput.value);
-  }
-
-  else {
+  if (messageInput.value === ''  || offsetInput.value === '') {
+    alert("Recuerde ingresar información y código party");
+  } else{
+    if (offsetInput.value >= 0) {
+      messageOutput.innerHTML = window.cipher.decode(offsetInput.value, messageInput.value);
+    } else {
       /* Incorporación offset negativo - se usa su módulo en cipher*/
-    messageOutput.innerHTML = window.cipher.encode(offsetInput.value, messageInput.value);
+      messageOutput.innerHTML = window.cipher.encode(offsetInput.value, messageInput.value);
+    }
   }
 
 }

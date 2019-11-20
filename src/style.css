@@ -57,7 +57,7 @@ body {
   width: 110px;
 }
 
-h1 {
+.title {
   padding-top: 10px;
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
@@ -65,7 +65,7 @@ h1 {
   text-shadow: 0 0 70px #fff, 0 0 10px #ece4dd;
 }
 
-h3 {
+.subtitle {
   margin: 2rem 0;
   text-shadow: 0 0 70px #fff, 0 0 10px #ece4dd;
 }
@@ -93,11 +93,11 @@ h3 {
   text-decoration: none;
 }
 
-p {
+.distancia {
   margin-top: 1.5rem;
 }
 
-span {
+.destacado {
   text-shadow: 0 0 10px #5BF;
 }
 

@@ -26,14 +26,14 @@
   <section class="container">
     <div class="root">
       <button id="myBtn"><i class="far fa-pause-circle fa-2x"></i></button>
-      <h1>&nbsp&nbspSecret Party <img src="images/vip.png" alt="logovip" class="imgLogoVip"></h1>
-      <h3>Crea o descubre la información para asistir a tu fiesta VIP</h3>
+      <h1 class="title">&nbsp&nbspSecret Party <img src="images/vip.png" alt="logovip" class="imgLogoVip"></h1>
+      <h3 class="subtitle">Crea o descubre la información para asistir a tu fiesta VIP</h3>
 
-      <a href="#info" id="myBtn2"><i class="fas fa-question-circle"></i></a>
+      <a href="#info" id="myBtn2" title="Instrucciones"><i class="fas fa-question-circle"></i></a>
       <div id="info" class="info">
         <div class="infoContenido">
           <a href="#" class="cierre">X</a>
-          <p>Si desea <span>CREAR:</span></p>
+          <p class="distancia">Si desea <span class="destacado">CREAR:</span></p>
           <ol>
             <li>Ingrese la información de su evento.</li>
             <li>Elija un código party entre -100 y 100.</li>
@@ -43,7 +43,7 @@
             <li>Presione botón limpiar si quiere volver a utilizar.</li>
           </ol>
           <br>
-          <p>Si desea <span>DESCUBRIR:</span></p>
+          <p class="distancia">Si desea <span>DESCUBRIR:</span></p>
           <ol>
             <li>Ingrese la información de su invitación.</li>
             <li>Seleccione código party adjunto.</li>
@@ -51,7 +51,7 @@
             <li>El texto decodificado estará en recuadro inferior. Cópielo! (presione copy).</li>
             <li>Presione botón limpiar si quiere volver a utilizar.</li>
           </ol>
-          <p>¡Disfrute de su evento!</p>
+          <p class="distancia">¡Disfrute de su evento!</p>
         </div>
       </div>
 
@@ -60,7 +60,7 @@
 
       <div class="offsetText">
         <label for="offset1" id="label1">Código Party :</label>
-        <input type="number" name="offset1" id="offset1" min="-100" max="100" required>
+        <input type="number" name="offset1" id="offset1" min="-100" max="100">
       </div>
 
       <button type="button" name="button" id="btnCodificar" class="btnParty">Crear</button>
